@@ -1,62 +1,72 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="4" failed="1" skipped="0">
+<testng-results ignored="0" total="4" passed="3" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-04-17T18:08:10 IST" name="Surefire suite" finished-at="2025-04-17T18:08:38 IST" duration-ms="27746">
+  <suite started-at="2025-04-17T18:09:55 IST" name="Suite" finished-at="2025-04-17T18:10:00 IST" duration-ms="4608">
     <groups>
     </groups>
-    <test started-at="2025-04-17T18:08:10 IST" name="Surefire test" finished-at="2025-04-17T18:08:38 IST" duration-ms="27746">
+    <test started-at="2025-04-17T18:09:55 IST" name="Test" finished-at="2025-04-17T18:10:00 IST" duration-ms="4608">
       <class name="com.ninza.hrm.api.projecttest.ProjectTest">
-        <test-method signature="addSingleProjectWithCreated()[pri:0, instance:com.ninza.hrm.api.projecttest.ProjectTest@5e82df6a]" started-at="2025-04-17T18:08:34 IST" name="addSingleProjectWithCreated" finished-at="2025-04-17T18:08:37 IST" duration-ms="3021" status="PASS">
+        <test-method signature="addSingleProjectWithCreated()[pri:0, instance:com.ninza.hrm.api.projecttest.ProjectTest@49139829]" started-at="2025-04-17T18:09:58 IST" name="addSingleProjectWithCreated" finished-at="2025-04-17T18:09:59 IST" duration-ms="1535" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addSingleProjectWithCreated -->
-        <test-method signature="createDuplicateProjectTest()[pri:0, instance:com.ninza.hrm.api.projecttest.ProjectTest@5e82df6a]" started-at="2025-04-17T18:08:37 IST" name="createDuplicateProjectTest" finished-at="2025-04-17T18:08:38 IST" depends-on-methods="com.ninza.hrm.api.projecttest.ProjectTest.addSingleProjectWithCreated" duration-ms="143" status="PASS">
+        <test-method signature="createDuplicateProjectTest()[pri:0, instance:com.ninza.hrm.api.projecttest.ProjectTest@49139829]" started-at="2025-04-17T18:09:59 IST" name="createDuplicateProjectTest" finished-at="2025-04-17T18:10:00 IST" depends-on-methods="com.ninza.hrm.api.projecttest.ProjectTest.addSingleProjectWithCreated" duration-ms="41" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- createDuplicateProjectTest -->
       </class> <!-- com.ninza.hrm.api.projecttest.ProjectTest -->
-      <class name="com.ninza.hrm.api.employeetest.NinzaTest">
-        <test-method signature="createTest()[pri:0, instance:com.ninza.hrm.api.employeetest.NinzaTest@1ddf84b8]" started-at="2025-04-17T18:08:13 IST" name="createTest" finished-at="2025-04-17T18:08:34 IST" duration-ms="20977" status="FAIL">
-          <exception class="org.openqa.selenium.StaleElementReferenceException">
+      <class name="com.ninza.hrm.api.employeetest.EmployeeTest">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:com.ninza.hrm.api.employeetest.EmployeeTest@7f0eb4b4]" started-at="2025-04-17T18:09:53 IST" name="configBS" finished-at="2025-04-17T18:09:55 IST" duration-ms="1858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method signature="addEmployeTest()[pri:0, instance:com.ninza.hrm.api.employeetest.EmployeeTest@7f0eb4b4]" started-at="2025-04-17T18:09:55 IST" name="addEmployeTest" finished-at="2025-04-17T18:09:58 IST" duration-ms="2801" status="FAIL">
+          <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[The element with the reference d1a5abbf-af99-4346-b9a3-e5e795d7e7d4 is stale; either its node document is not the active document, or it is no longer connected to the DOM
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [2f15c58d-a289-4747-9763-d02b6304ea4c, isElementEnabled {id=d1a5abbf-af99-4346-b9a3-e5e795d7e7d4}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.2, moz:accessibilityChecks: false, moz:buildID: 20250414091429, moz:debuggerAddress: 127.0.0.1:1836, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18128, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:1836/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (2f15c58d-a289-4747-9763-d02b6304ea4c)] -> xpath: //label[text()='Project Status* ']/following-sibling::select]
-Session ID: 2f15c58d-a289-4747-9763-d02b6304ea4c]]>
+              <![CDATA[1 expectation failed.
+Expected status code <201> but was <409>.
+]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.StaleElementReferenceException: The element with the reference d1a5abbf-af99-4346-b9a3-e5e795d7e7d4 is stale; either its node document is not the active document, or it is no longer connected to the DOM
-For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#stale-element-reference-exception
-Build info: version: '4.27.0', revision: 'd6e718d134'
-System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.12'
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Command: [2f15c58d-a289-4747-9763-d02b6304ea4c, isElementEnabled {id=d1a5abbf-af99-4346-b9a3-e5e795d7e7d4}]
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 137.0.2, moz:accessibilityChecks: false, moz:buildID: 20250414091429, moz:debuggerAddress: 127.0.0.1:1836, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 18128, moz:profile: C:\Users\lenovo\AppData\Loc..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://127.0.0.1:1836/devtool..., se:cdpVersion: 85.0, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Element: [[FirefoxDriver: firefox on windows (2f15c58d-a289-4747-9763-d02b6304ea4c)] -> xpath: //label[text()='Project Status* ']/following-sibling::select]
-Session ID: 2f15c58d-a289-4747-9763-d02b6304ea4c
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected status code <201> but was <409>.
+
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
 at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
 at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
-at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
-at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
-at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
-at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
-at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
-at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
-at org.openqa.selenium.remote.RemoteWebElement.isEnabled(RemoteWebElement.java:181)
-at org.openqa.selenium.support.ui.Select.assertSelectIsEnabled(Select.java:430)
-at org.openqa.selenium.support.ui.Select.selectByVisibleText(Select.java:125)
-at com.ninza.hrm.api.employeetest.NinzaTest.createTest(NinzaTest.java:43)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:45)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:125)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:139)
+at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:696)
+at io.restassured.internal.ResponseSpecificationImpl.this$2$validateResponseIfRequired(ResponseSpecificationImpl.groovy)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.codehaus.groovy.runtime.callsite.PlainObjectMetaMethodSite.doInvoke(PlainObjectMetaMethodSite.java:43)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:198)
+at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:62)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:135)
+at io.restassured.specification.ResponseSpecification$statusCode$0.callCurrent(Unknown Source)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallCurrent(CallSiteArray.java:49)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:171)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:185)
+at io.restassured.internal.ResponseSpecificationImpl.statusCode(ResponseSpecificationImpl.groovy:143)
+at io.restassured.internal.ValidatableResponseOptionsImpl.statusCode(ValidatableResponseOptionsImpl.java:89)
+at com.ninza.hrm.api.employeetest.EmployeeTest.addEmployeTest(EmployeeTest.java:35)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -82,39 +92,28 @@ at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
 at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
 at org.testng.TestNG.runSuites(TestNG.java:1112)
 at org.testng.TestNG.run(TestNG.java:1079)
-at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:155)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.executeMulti(TestNGDirectoryTestSuite.java:169)
-at org.apache.maven.surefire.testng.TestNGDirectoryTestSuite.execute(TestNGDirectoryTestSuite.java:88)
-at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:137)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
 at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
 at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
 at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
 at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
 ]]>
             </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.StaleElementReferenceException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- createTest -->
-      </class> <!-- com.ninza.hrm.api.employeetest.NinzaTest -->
-      <class name="com.ninza.hrm.api.employeetest.EmployeeTest">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:com.ninza.hrm.api.employeetest.EmployeeTest@21de60b4]" started-at="2025-04-17T18:08:08 IST" name="configBS" finished-at="2025-04-17T18:08:10 IST" duration-ms="2028" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBS -->
-        <test-method signature="addEmployeTest()[pri:0, instance:com.ninza.hrm.api.employeetest.EmployeeTest@21de60b4]" started-at="2025-04-17T18:08:10 IST" name="addEmployeTest" finished-at="2025-04-17T18:08:13 IST" duration-ms="3218" status="PASS">
+          </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployeTest -->
-        <test-method signature="addEmployeWithOutEmailTest()[pri:0, instance:com.ninza.hrm.api.employeetest.EmployeeTest@21de60b4]" started-at="2025-04-17T18:08:13 IST" name="addEmployeWithOutEmailTest" finished-at="2025-04-17T18:08:13 IST" duration-ms="231" status="PASS">
+        <test-method signature="addEmployeWithOutEmailTest()[pri:0, instance:com.ninza.hrm.api.employeetest.EmployeeTest@7f0eb4b4]" started-at="2025-04-17T18:09:58 IST" name="addEmployeWithOutEmailTest" finished-at="2025-04-17T18:09:58 IST" duration-ms="127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- addEmployeWithOutEmailTest -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:com.ninza.hrm.api.employeetest.EmployeeTest@21de60b4]" started-at="2025-04-17T18:08:38 IST" name="configAS" finished-at="2025-04-17T18:08:38 IST" duration-ms="29" status="PASS">
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.ninza.hrm.api.employeetest.EmployeeTest@7f0eb4b4]" started-at="2025-04-17T18:10:00 IST" name="configAS" finished-at="2025-04-17T18:10:00 IST" duration-ms="11" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAS -->
       </class> <!-- com.ninza.hrm.api.employeetest.EmployeeTest -->
-    </test> <!-- Surefire test -->
-  </suite> <!-- Surefire suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
