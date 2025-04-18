@@ -12,9 +12,9 @@ import io.restassured.specification.RequestSpecification;
 import io.restassured.specification.ResponseSpecification;
 
 public class BaseAPI {
-	public JavaUtility jlib=new JavaUtility();
-	public FileUtility flib=new FileUtility();
-	public Databaseutility dlib=new Databaseutility();
+	public static JavaUtility jlib=new JavaUtility();
+	public static FileUtility flib=new FileUtility();
+	public static Databaseutility dlib=new Databaseutility();
 	public static RequestSpecification specReqObj;
 	public static ResponseSpecification specResObj;
 	

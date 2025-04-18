@@ -3,11 +3,13 @@
 <suite name="Failed suite [Surefire suite]" verbose="0">
   <test thread-count="5" name="Surefire test(failed)" verbose="0">
     <classes>
-      <class name="com.ninza.hrm.api.employeetest.NinzaTest">
+      <class name="com.ninza.hrm.api.employeetest.EmployeeTest">
         <methods>
-          <include name="createTest"/>
+          <include name="configAS"/>
+          <include name="configBS"/>
+          <include name="addEmployeTest"/>
         </methods>
-      </class> <!-- com.ninza.hrm.api.employeetest.NinzaTest -->
+      </class> <!-- com.ninza.hrm.api.employeetest.EmployeeTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

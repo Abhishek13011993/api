@@ -5,7 +5,8 @@
     <classes>
       <class name="com.ninza.hrm.api.employeetest.EmployeeTest">
         <methods>
-          <include name="configAs"/>
+          <include name="configAS"/>
+          <include name="addEmployeWithOutEmailTest"/>
           <include name="configBS"/>
           <include name="addEmployeTest"/>
         </methods>
